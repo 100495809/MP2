@@ -1,0 +1,129 @@
+body {
+    background-image: url("assets/pokedex2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #610C0C; /* Pokédex red background */
+    font-family: 'Arial', sans-serif;
+}
+
+.list-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.toGalleryButton{
+    padding-bottom: 10px;
+}
+
+.list-view-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.searchbar{
+    /*Why does this not work*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width : 10px
+}
+
+.sort-buttons{
+    display: flex;
+    justify-content: center/* Add this class for the sort buttons */
+}
+
+.list-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemon-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.pokemon-item {
+    list-style: none;
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.pkmn-name {
+    background: #e0e0e0; /* Metallic button */
+    border-radius: 12px;
+    border: 2px solid #757575; /* Dark metallic border */
+    cursor: pointer;
+    font-size: 18px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    margin: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Adds shadow */
+    transition: background 0.3s ease; /* Smooth transition for hover */
+
+}
+
+.pkmn-name:hover {
+    background: #c62828; /* Pokédex red on hover */
+    color: white;
+}
+
+.pkmn-name img {
+    margin-right: 10px;
+    border: 2px solid #c62828; /* Red border around image */
+    border-radius: 8px;
+    background-color: #fff; /* Background for sprite */
+    padding: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #757575;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #c62828;
+}
+
+button {
+    background-color: #e0e0e0;
+    border: 2px solid #757575;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+    color: #212121;
+    font-size: 14px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+
+}
+
+button:hover {
+    background-color: #c62828;
+    color: white;
+}
